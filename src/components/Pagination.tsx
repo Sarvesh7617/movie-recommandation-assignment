@@ -12,11 +12,11 @@ const Pagination=({
   onNext,
 }: paginationProps)=> {
   return (
-    <div className="flex justify-center items-center gap-4 mt-8">
+    <div className="flex justify-center items-center gap-4 mt-8 pb-10">
       <button
         disabled={page === 1}
         onClick={onPrev}
-        className="px-4 py-2 bg-black text-white rounded disabled:opacity-50"
+        className="cursor-pointer px-4 py-2 bg-black text-white rounded disabled:opacity-50"
       >
         Prev
       </button>
@@ -28,7 +28,7 @@ const Pagination=({
       <button
         disabled={page >= totalPages}
         onClick={onNext}
-        className="px-4 py-2 bg-black text-white rounded disabled:opacity-50"
+        className="cursor-pointer px-4 py-2 bg-black text-white rounded disabled:opacity-50"
       >
         Next
       </button>

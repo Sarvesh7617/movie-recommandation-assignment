@@ -6,6 +6,7 @@ import { Loader,LoadingOverlay} from "@mantine/core";
 import MovieCard from "@/components/MovieCard";
 import MovieModal from "@/components/MovieModal";
 import Pagination from "@/components/Pagination";
+import Footer from "@/components/Footer";
 import { toast } from "sonner";
 import { Box } from "lucide-react";
 
@@ -124,6 +125,7 @@ export default function Home() {
   }
 
   return (
+    <>
     <main className="min-h-screen bg-gray-100 p-10">
       <h1 className="text-3xl font-bold mb-4">Movie Finder</h1>
       <p className="mb-4 text-gray-600">
@@ -192,5 +194,7 @@ export default function Home() {
         onNext={()=>setPage((p)=>p+1)}
       />
     </main>
+    <Footer/>
+    </>
   );
 }
