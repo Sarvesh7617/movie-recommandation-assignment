@@ -60,7 +60,7 @@ Users can search movies, view details, manage favorites, and navigate results us
 
 
 ## 🚀 Live Demo
-[Click here to visit project](https://movie-recommandation-assignment.vercel.app/)
+[Click here to visit project](https://movie-recommandation-assignment.vercel.app)
 
 ---
 
@@ -120,7 +120,7 @@ Create a .env file in the root of your project and add TMDB api key:
   ```
 
 
-# Run development server
+### 5. Run development server
   ```bash
   npm run dev
   ```
